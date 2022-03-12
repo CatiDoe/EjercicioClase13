@@ -1,0 +1,56 @@
+/* FORMULARIO */
+.container{
+    display: block;
+    margin: auto;
+    margin-top: 1rem;
+    width: 80%;
+    border: 1px solid black;
+    padding: 1.5rem;
+    box-shadow: 10px 10px 5px -5px rgba(0, 0, 0, .75);
+}
+
+.container > .element{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.container > .element > .item{
+    width: 48%;
+    max-width: 48%;
+}
+
+.container > .element > .item > textarea{
+    width: 100%;
+}
+
+.container > .btn{
+    font-size: 25px;
+    background-color: #3B5998;
+    color: white;
+    border-radius: 10px;
+    border: 1px solid white;
+    padding: 8px;
+    display: block;
+    margin: auto;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+/* VALIDACIONES */
+.success{
+    border: 1px solid green!important;
+}
+
+.error{
+    border: 1px solid red!important;
+}
+
+.errorSelect{
+    border-color:  red !important;
+}
+
+.successSelect{
+    border-color:  green !important;
+}

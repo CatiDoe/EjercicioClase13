@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contacto.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+</head>
+
+<body>
+    <!-- MENU -->
+    <header class="header">
+        <img src="images/logo.png" alt="">
+        <nav class="menu">
+            <ul class="list-menu">
+                <li class="list-item">
+                    <a href="index.html">Home</a>
+                </li>
+                <li class="list-item">Productos</li>
+                <li class="list-item">
+                    <a href="contacto.html">Contacto</a>
+                </li>
+                <li class="list-item" id="myBtn">Agregar Producto</li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- CONTACTO -->
+    <div class="container">
+        <div class="element">
+            <div class="item">
+                <label for="">Nombre De Usuario</label>
+                <input type="text" placeholder="Ingresa tu nombre" id="name">
+            </div>
+            <div class="item">
+                <label for="">Numero de telefono</label>
+                <input type="number" placeholder="Ingresa tu telefono" id="tel">
+                <span class="error-text" id="error-tel"></span>
+            </div>
+        </div>
+        <div class="element">
+            <div class="item">
+                <label for="">Email</label>
+                <input type="text" placeholder="Ingresa tu email" id="email">
+            </div>
+            <div class="item">
+                <label for="">Opciones de curso</label>
+                <select required={true} name="" id="opciones">
+                    <option value="1">Seleccionar una opción</option>
+                    <option value="JS">Curso De JavaScript</option>
+                    <option value="CSS">Curso De CSS</option>
+                    <option value="HTML">Curso De HTML</option>
+                </select>
+            </div>
+        </div>
+        <div class="element">
+            <div class="item">
+                <label for="">Mensaje</label>
+                <textarea placeholder="Ingresa tu mensaje" id="mensaje" cols="30" rows="10"></textarea>
+            </div>
+        </div>
+
+        <button class="btn" type="button" onclick="validateForm()"> <i class="fas fa-address-book"></i> Enviar datos</button>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/js/all.min.js"></script>
+
+    <script src="js/form.js"></script>
+
+</body>
+
+</html>

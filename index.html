@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ELP - Ecommerce</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <header class="header">
+        <img src="images/logo.png" alt="">
+        <nav class="menu">
+            <ul class="list-menu">
+                <li class="list-item">Home</li>
+                <li class="list-item">Productos</li>
+                <li class="list-item">
+                    <a href="contacto.html">Contacto</a>
+                </li>
+                <li class="list-item" id="myBtn">Agregar Producto</li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <!-- HOMBRES -->
+        <div class="section-description">
+            <img src="images/hombre.jpeg" alt="">
+            <div class="desc-elements">
+                <h1>Hombres</h1>
+                <p>Descubre más productos</p>
+            </div>
+        </div>
+        <div class="section-products" id="divProducts">
+            
+        </div>
+
+        <!-- MUJERES -->
+        <div class="section-description">
+            <div class="desc-elements">
+                <h1>Mujeres</h1>
+                <p>Descubre más productos</p>
+            </div>
+            <img src="images/mujeres.jpeg" alt="">
+        </div>
+
+        <div class="section-products">
+            
+        </div>
+    </div>
+
+    <!-- MODAL -->
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="formulario">
+                <form action="">
+                  <label for="fname">Nombre del producto</label>
+                  <input type="text" id="pname" name="firstname" placeholder="Your name..">
+              
+                  <label for="lname">Precio</label>
+                  <input type="number" id="pprice" name="lastname" placeholder="Your last name..">
+              
+                  <label for="sproduct">Categoria producto</label>
+                  <select id="sproduct" name="country">
+                    <option value="Juguetes">Juguetes</option>
+                    <option value="Accesorios">Accesorios</option>
+                  </select>
+
+                  <input type="file" id="pdocument">
+                
+                  <input onclick="addProduct()" type="button" value="Submit">
+                </form>
+              </div>
+              
+        </div>
+
+    </div>
+
+    <script src="js/modal.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
